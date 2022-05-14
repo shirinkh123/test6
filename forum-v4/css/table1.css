@@ -1,0 +1,71 @@
+
+            table { 
+                border-collapse: collapse; 
+                width:100%;
+                background-color:white;
+            } 
+            th{
+  padding: 20px 15px;
+  text-align: right;
+  font-weight: 500;
+  font-size: 12px;
+  border:1px solid black; 
+  text-transform: uppercase;
+}
+td{
+  padding: 15px;
+  text-align: right;
+  vertical-align:middle;
+  font-weight: 300;
+  font-size: 14px;
+  border-bottom: solid 1px rgba(255,255,255,0.1);
+  border:1px solid black; 
+
+}
+th {  font-size: 14px;
+    border:1px solid black; 
+    background: #00F260;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0575E6, #00F260);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0575E6, #00F260); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                    Color:white; 
+            } 
+            table.teachers{
+                direction:rtl;
+            }
+
+
+           
+           
+        
+    @media(max-width:992px) {
+        table{ 
+          display: block; 
+          background: white;
+          
+        }
+        /* Force table to not be like tables anymore */
+        table, thead, tbody, th, td, tr { 
+          display: block; 
+          background: white;
+          
+        }
+        
+        /* Hide table headers (but not display: none;, for accessibility) */
+        thead tr { 
+          position: absolute;
+          top: -9999px;
+          left: -9999px;
+        }
+        
+        tr { border: 1px solid #ccc; }
+        
+        td {  background: white;
+          /* Behave  like a "row" */
+          border: none;
+          border-bottom: 1px solid #eee; 
+          position: relative;
+          padding-left: 50%; 
+        }
+    
+       
+      }
